@@ -1,0 +1,38 @@
+.tabs__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.tabs__item {
+  grid-column: 4 span;
+}
+
+.tabs__panel {
+  display: none;
+}
+
+
+.tabs__nav {
+  list-style: none;
+  display: flex;
+}
+
+.tabs__panel--active {
+  display: block;
+}
+
+.tabs__nav-btn:focus {
+  color: #fff;
+  background-color: navy;
+}
+
+.tabs__nav-btn--active {
+  background-color: wheat;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

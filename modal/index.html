@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+    <button class="modal-btn" data-graph-path="first" data-graph-animation="fadeInUp" data-graph-speed="100">
+      Открыть
+      окно 1
+    </button>
+    <button class="modal-btn" data-graph-path="second" data-graph-animation="fade">
+      Открыть окно 2
+    </button>
+    <button class="modal-btn" data-graph-path="third" data-graph-animation="fade">
+      Открыть окно 3
+    </button>
+  </div>
+  <div class="modal">
+    <div class="modal__container" role="dialog" aria-modal="true" data-target="first">
+      <button class="modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="modal__content">
+        <p>Modal-1</p>
+      </div>
+    </div>
+    <div class="modal__container" role="dialog" aria-modal="true" data-target="second">
+      <button class="modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="modal__content">
+        <p>Modal-2</p>
+      </div>
+    </div>
+    <div class="modal__container" role="dialog" aria-modal="true" data-target="third">
+      <button class="modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="modal__content">
+        <p>Modal-3</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
